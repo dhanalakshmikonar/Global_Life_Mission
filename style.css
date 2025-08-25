@@ -100,7 +100,7 @@
 /* Slide Backgrounds */
 .slide1 { background-image: url('img/gdm.jpg'); }
 .slide2 { background-image: url('img/gdm2.jpg'); }
-.slide3 { background-image: url('img/gdm3.jpg'); }
+.slide3 { background-image: url('img/slide3.jpg'); }
 
 .slide-content {
   background: rgba(0, 0, 0, 0.4);
@@ -253,4 +253,365 @@
     font-size: 20px;
   }
 }
+
+.about-section {
+  background: #f8f6fb; /* Light background */
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap; /* Responsive */
+}
+
+.about-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about-content h3 {
+  font-size: 22px;
+  color: #c2185b; /* Pinkish like Spiegel site */
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+.about-content ul li::before {
+  content: "•";
+  color: #c2185b;
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.about-box-section {
+  background: #f8f6fb; /* Light background */
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap; /* Responsive */
+}
+
+.about-box-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-box-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-box-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.about-box-content h3 {
+  font-size: 22px;
+  color: #c2185b; /* Pinkish like Spiegel site */
+  margin-bottom: 20px;
+}
+
+.about-box-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-box-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-box-content ul li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+.about-box-content ul li::before {
+  content: "•";
+  color: #c2185b;
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.goodlife-box-section {
+  background: #f8f6fb;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.goodlife-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.goodlife-box-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.goodlife-box-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.goodlife-box-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.goodlife-box-content h3 {
+  font-size: 22px;
+  color: #c2185b; /* Accent color similar to your original */
+  margin-bottom: 20px;
+}
+
+.goodlife-box-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.goodlife-box-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.goodlife-box-content ul li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+.goodlife-box-content ul li::before {
+  content: "•";
+  color: #c2185b;
+  font-size: 22px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.what-we-do-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.what-we-do-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.what-we-do-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.what-we-do-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.what-we-do-content h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.what-we-do-content h3 {
+  font-size: 24px;
+  color: #c2185b;  /* Spiegel-like accent color */
+  margin-bottom: 20px;
+}
+
+.what-we-do-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.what-we-do-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.what-we-do-content ul li {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+  position: relative;
+  padding-left: 25px;
+}
+
+.what-we-do-content ul li::before {
+  content: "•";
+  color: #c2185b;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
 /* Footer */
+/* Footer Styling - Larger + Light Grey */
+.site-footer {
+  background: #f3eded;   /* light grey background */
+  color: #333;           /* darker text for contrast */
+  padding: 100px 40px 40px;  /* more spacious padding */
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: auto;
+  gap: 60px;   /* more gap between columns */
+}
+
+.footer-col {
+  flex: 1;
+  margin: 20px;
+  min-width: 320px;   /* wider columns */
+}
+
+.footer-logo {
+  width: 240px;       /* much larger logo */
+  margin-bottom: 25px;
+}
+
+.footer-col h3 {
+  color: #111;
+  margin-bottom: 25px;
+  font-size: 26px;    /* bigger heading */
+  font-weight: bold;
+}
+
+.footer-col p {
+  font-size: 18px;    /* larger paragraph text */
+  line-height: 1.9;
+  color: #444;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 14px 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 18px;    /* larger links */
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #c2185b;     /* accent hover */
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 14px;
+  color: #444;
+  font-size: 26px;    /* larger icons */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #c2185b;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 30px 0 0;
+  margin-top: 50px;
+  border-top: 1px solid #ccc;
+  font-size: 16px;    /* slightly larger text */
+  color: #666;
+}
+
