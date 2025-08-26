@@ -23,3 +23,13 @@ $(document).ready(function () {
   });
 });
 
+// Duplicate ticker list automatically for seamless loop
+document.addEventListener("DOMContentLoaded", () => {
+  const tickerTrack = document.querySelector(".ticker-track");
+  const tickerList = tickerTrack.querySelector(".ticker-list");
+
+  // Clone and append
+  const clone = tickerList.cloneNode(true);
+  clone.setAttribute("aria-hidden", "true"); // for accessibility
+  tickerTrack.appendChild(clone);
+});

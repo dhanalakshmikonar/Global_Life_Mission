@@ -615,3 +615,82 @@
   color: #666;
 }
 
+/* --- Event Ticker Styles --- */
+.event-ticker {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 40px;
+  background: #c2185b;
+  border-bottom: 1px solid #e5e7eb;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  font: 500 14px/1 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+.ticker-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  width: max-content;
+  animation: ticker-scroll 35s linear infinite;
+}
+
+.event-ticker:hover .ticker-track,
+.event-ticker:focus-within .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-list {
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ticker-list li {
+  display: inline-block;
+  padding: 0 2rem;
+  line-height: 40px;
+  white-space: nowrap;
+}
+
+/* Seamless infinite scroll */
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .event-ticker { height: 36px; }
+  .ticker-list li {
+    line-height: 36px;
+    padding: 0 1rem;
+    font-size: 13px;
+  }
+}
+
+/* Make slide content clickable */
+.slide-content h2 a {
+  color: white;              /* custom color */
+  text-decoration: none;     /* remove underline */
+  cursor: pointer;
+  position: relative;
+  z-index: 10;               /* keep above overlays */
+}
+
+/* Optional hover effect */
+.slide-content h2 a:hover {
+  color: plum;
+}
