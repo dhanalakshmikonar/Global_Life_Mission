@@ -15,7 +15,9 @@
   display: flex;
   justify-content: center;
   gap: 25px;
+  padding-left: 154px; /* shift text right */
 }
+
 
 /* Navbar */
 .navbar {
@@ -694,3 +696,4 @@
 .slide-content h2 a:hover {
   color: plum;
 }
+

@@ -1,0 +1,119 @@
+/* Donation Section */
+.donation-page {
+  height: 100vh; /* full screen */
+  width: 100%;
+  background: #f0f0f0; /* light grey background */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* remove overlay since background is plain */
+.donation-page .overlay {
+  display: none;
+}
+
+/* Heading */
+.donation-header {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+}
+
+.donation-header h1 {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000; /* black heading */
+}
+
+.donation-header p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+  font-style: italic;
+  color: #6a1b9a; /* purple subheading */
+}
+
+/* Donation Box */
+.donation-container {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+  width: 90%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.donation-container h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  color: #6a1b9a;
+}
+
+.donation-subtext {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* Donation Amount Buttons */
+.donation-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.donate-amount {
+  padding: 12px 25px;
+  border: 2px solid #6a1b9a;
+  background: #f3e5f5;
+  color: #6a1b9a;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.donate-amount:hover,
+.donate-amount.active {
+  background: #6a1b9a;
+  color: #fff;
+}
+
+/* Custom Amount */
+.custom-donation input {
+  width: 80%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Donate Button */
+.donate-btn {
+  width: 100%;
+  padding: 14px;
+  background: #6a1b9a;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.donate-btn:hover {
+  background: #4a148c;
+}
