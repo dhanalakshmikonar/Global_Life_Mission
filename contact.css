@@ -95,3 +95,13 @@
   border-radius: 15px;
   overflow: hidden;
 }
+
+.contact-box:hover {
+  background: #ffffff;
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.contact-box:hover i {
+  color: #ff5722;
+}
