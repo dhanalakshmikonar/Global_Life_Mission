@@ -333,6 +333,7 @@
 }
 
 .about-box-container {
+  background: #f8f6fb; 
   display: flex;
   align-items: center;
   justify-content: center;
