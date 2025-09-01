@@ -30,7 +30,8 @@
   margin: 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #000; /* black heading */
+  color: #c2185b; /* Accent color similar to your original */
+  
 }
 
 .donation-header p {

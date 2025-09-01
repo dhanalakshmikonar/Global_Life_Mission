@@ -22,3 +22,11 @@ $(document).ready(function () {
     ]
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const track = document.querySelector(".gl-gallery-track");
+  const items = track.innerHTML;
+
+  // Duplicate content to create infinite scroll
+  track.innerHTML += items;
+});

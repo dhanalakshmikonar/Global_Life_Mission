@@ -9,9 +9,10 @@
 /* Top Bar */
 .top-bar {
   background: #c2185b;
+  height: 40px;
   color: #fff;
-  font-size: 14px;
-  padding: 6px 20px;   /* slim like Spiegel */
+  font-size: 15px;
+  padding: 10px 20px;   /* slim like Spiegel */
   display: flex;
   justify-content: center;
   gap: 25px;
@@ -598,7 +599,7 @@
 
 .social-icons a {
   display: inline-block;
-  margin: 0 14px;
+  margin: 14px;
   color: #444;
   font-size: 26px;    /* larger icons */
   transition: color 0.3s;
@@ -607,6 +608,7 @@
 .social-icons a:hover {
   color: #c2185b;
 }
+
 
 .footer-bottom {
   text-align: center;
@@ -623,7 +625,7 @@
   top: 0;
   z-index: 9999;
   width: 100%;
-  height: 40px;
+  height: 20px;
   background: #c2185b;
   border-bottom: 1px solid #e5e7eb;
   overflow: hidden;
@@ -965,5 +967,85 @@
 @media (max-width: 900px) {
   .services-section .services-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Headings */
+h1, h2, h3, h4, .section-title {
+  font-family: 'Cinzel', serif;
+}
+
+/* Body text */
+body, p, li, strong {
+  font-family: 'Lora', serif;
+}
+
+
+/* ===== Gallery Section ===== */
+.gl-gallery-section {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gl-gallery-header {
+  margin-bottom: 30px;
+}
+
+.gl-gallery-title {
+  font-size: 2.5rem;
+  color: #c2185b;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.gl-gallery-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Scrolling wrapper */
+.gl-gallery-scroll {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.gl-gallery-track {
+  display: flex;
+  gap: 20px;
+  animation: gl-scrollGallery 40s linear infinite;
+}
+
+.gl-gallery-item {
+  min-width: 320px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.gl-gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Scroll animation */
+@keyframes gl-scrollGallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .gl-gallery-item {
+    min-width: 240px;
+  }
+  .gl-gallery-item img {
+    height: 160px;
   }
 }
