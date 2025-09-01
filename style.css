@@ -333,7 +333,6 @@
 }
 
 .about-box-container {
-  background: #f8f6fb; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1002,10 +1001,13 @@ body, p, li, strong {
 }
 
 .gl-gallery-subtitle {
-  font-size: 1.1rem;
-  color: #444;
-  line-height: 1.6;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
 }
+
+
 
 /* Scrolling wrapper */
 .gl-gallery-scroll {
