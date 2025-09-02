@@ -247,7 +247,7 @@ Building a self-reliant and empowered society.”</p>
 }
 
 .blessing-heading {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 30px;
   color: #c2185b;
@@ -294,34 +294,46 @@ Building a self-reliant and empowered society.”</p>
   <div class="overlay"></div>
 
   <!-- Heading -->
-  <div class="donation-header">
-    <h1>Contribute</h1>
-    <p>Your kindness can light up someone’s life ✨</p>
-  </div>
-<!-- Donation Box -->
+   <!-- ===== Contribute Heading ===== -->
+<div class="donation-heading">
+  <h1>Contribute</h1>
+</div>
+
+  <!-- ===== Contribute / Donation Section ===== -->
+<section class="donation-section">
   <div class="donation-container">
-    <h2>Your Support Can Change Lives ❤️</h2>
-    <p class="donation-subtext">
-      Every contribution helps Good Life Mission empower communities, support education, 
-      and provide care for those in need. Join us in making a difference today.
-    </p>
+    <!-- Left: Content -->
+    <div class="donation-text">
+      <h2>Make a Difference Today ❤️</h2>
+      <p>
+        Your contribution helps us serve communities, bring hope, and spread love. 
+        Every donation counts, and together we can impact lives for the better.
+      </p>
 
-    <div class="donation-options">
-      <button class="donate-amount">₹500</button>
-      <button class="donate-amount">₹1000</button>
-      <button class="donate-amount">₹2500</button>
-      <button class="donate-amount">₹5000</button>
+      <!-- Donation Options -->
+      <div class="donation-options">
+        <button class="donation-amount">₹100</button>
+        <button class="donation-amount">₹500</button>
+        <button class="donation-amount">₹1000</button>
+        <input type="number" placeholder="Custom Amount (₹)" class="donation-input" />
+      </div>
+
+      <!-- Donate Button -->
+      <a href="#" class="donate-btn">Contribute Now</a>
     </div>
 
-    <div class="custom-donation">
-      <input type="number" placeholder="Enter Custom Amount (₹)" min="1">
+    <!-- Right: Illustration -->
+    <div class="donation-image">
+      <img src="img/contro.png" alt="Donate" />
     </div>
-
-    <button class="donate-btn">Contribute Now</button>
   </div>
-  <link rel="stylesheet" href="donation.css"/>
-  <script src="donation.js"></script>
+
+  <!-- 🔗 CSS and JS Links -->
+<link rel="stylesheet" href="donation.css" />
+<script src="donation.js" defer></script>
 </section>
+
+
 <section class="testimonial-section">
   <div class="testimonial-header">
     <h2>What People Say</h2>
