@@ -90,6 +90,7 @@
 
 /* ===== Contribute Heading ===== */
 .donation-heading {
+  background: #ffffff;
   text-align: center;
   margin: 40px 0 20px;
 }
@@ -101,7 +102,9 @@
   position: relative;
   display: inline-block;
   padding-bottom: 10px;
+  margin-bottom: 0;   /* removes extra space */
 }
+
 
 /* Enriched Image Styling */
 .donation-image {
@@ -142,3 +145,35 @@
   animation: fadeUp 1s ease forwards;
 }
 
+.donation-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  opacity: 0;
+  transform: scale(0.85);        /* start smaller */
+  filter: brightness(60%);       /* dim */
+  transition: opacity 1.2s ease, transform 1.2s ease, filter 1.2s ease;
+}
+
+.donation-image.visible img {
+  opacity: 1;
+  transform: scale(1);           /* zoom to normal */
+  filter: brightness(100%);      /* brighten */
+}
+
+.donation-subheading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.donation-heading {
+  margin-bottom: 0;  /* remove container gap */
+}
+
+.donation-heading h1,
+.donation-heading p {
+  margin-bottom: 0;  /* no space below */
+}

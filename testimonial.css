@@ -1,7 +1,7 @@
 .testimonial-section {
   text-align: center;
   padding: 80px 20px;
-  background: url("img/boxes.jpg") no-repeat center center;
+  
   background-size: cover;  /* makes image cover the whole section */
 }
 

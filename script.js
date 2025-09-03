@@ -30,3 +30,23 @@ document.addEventListener("DOMContentLoaded", function() {
   // Duplicate content to create infinite scroll
   track.innerHTML += items;
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const videoBox = document.querySelector(".blessing-video");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          videoBox.classList.add("visible");
+        } else {
+          // remove below line if you only want one-time animation
+          videoBox.classList.remove("visible");
+        }
+      });
+    },
+    { threshold: 0.3 } // trigger when 30% of video is visible
+  );
+
+  observer.observe(videoBox);
+});
