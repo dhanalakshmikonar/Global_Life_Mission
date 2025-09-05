@@ -340,12 +340,14 @@ body {
   top: -2px;
 }
 .about-box-section {
-  background: #f8f6fb; /* Light background */
+  background: #f8f6fb;
+   /* Light background */
   padding: 60px 20px;
   font-family: 'Arial', sans-serif;
 }
 
 .about-box-container {
+  background: #f8f6fb;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -363,6 +365,7 @@ body {
 }
 
 .about-box-content {
+  background: #f8f6fb;
   flex: 1;
   min-width: 300px;
 }
@@ -1059,7 +1062,7 @@ body, p, li, strong {
 .blessing-video {
   opacity: 0;
   transform: translateX(-100px);   /* move from left */
-  transition: all 1s ease-in-out;  /* smooth effect */
+  transition: all 5s ease-in-out;  /* smooth effect */
   will-change: transform, opacity; /* performance boost */
 }
 
