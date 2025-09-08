@@ -50,3 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(videoBox);
 });
+
