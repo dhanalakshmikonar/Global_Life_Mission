@@ -116,7 +116,9 @@ body {
 /* Slide Backgrounds */
 .slide1 { background-image: url('img/gdm.jpg'); }
 .slide2 { background-image: url('img/gdm2.jpg'); }
-.slide3 { background-image: url('img/slide3.jpg'); }
+.slide3 { background-image: url('img/church.jpeg'); }
+.slide4 { background-image: url('img/coaching.jpeg'); }
+.slide5 { background-image: url('img/counselling.jpeg'); }
 
 .slide-content {
   background: rgba(0, 0, 0, 0.4);
