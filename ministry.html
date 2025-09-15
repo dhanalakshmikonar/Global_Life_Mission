@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="mobile.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
    <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
@@ -20,70 +21,57 @@
 
   <!-- Header -->
   <header>
-       <!-- Event Ticker Section -->
-<section class="event-ticker" role="region" aria-label="Latest events">
-  <div class="ticker-track">
-    <ul class="ticker-list">
-      <li>Aug 30: Community Outreach at GLC Center</li>
-      <li>Sep 02: Youth Fellowship – 6:00 PM</li>
-      <li>Sep 05: Food Drive – Volunteers Needed</li>
-      <li>Sep 10: Prayer Walk – City Park</li>
-      <li>Sep 15: Family Counseling Workshop</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Link CSS and JS -->
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
-
-    <!-- Top Bar -->
-    <div class="top-bar">
-      <span><i class="fa-solid fa-phone"></i>73585 20425</span>
-      <span><i class="fa-solid fa-envelope"></i> goodlifemission.international@gmail.com</span>
-      <span><i class="fa-solid fa-location-dot"></i> Coimbatore, India</span>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-      <!-- Logo + Title -->
-      <div class="logo">
-        <img src="img/Good Life Mission logo.ico" alt="Logo">
-        <span>Good Life Mission International</span>
-      </div>
-
-      <!-- Menu Links -->
-     <ul class="nav-links">
-  <li><a href="index.html#home">Home</a></li>
-  <li><a href="index.html#about">About Us</a></li>
-  <li><a href="index.html#gallery">Gallery</a></li>
-
-  <!-- Program with submenu -->
-  <li class="dropdown">
-    <a href="#">Program ▾</a>
-   <ul class="submenu">
-      <li><a href="ministry.html">Church</a></li>
-      <li><a href="community.html">Community</a></li>
-      <li><a href="coaching.html">Coaching</a></li>
-      <li><a href="counselling.html">Counselling</a></li>
-      
-    </ul>
-  </li>
-
-  <li><a href="index.html#donation">Contribute</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-
-      
-        <!-- Social Media -->
-<div class="social-icons">
-  <a href="https://www.facebook.com/ApostalicFaithFellowshipministries/"><i class="fa-brands fa-facebook-f"></i></a>
-  <a href="https://www.youtube.com/@GoodLifeMissionInternational"><i class="fa-brands fa-youtube"></i></a>
-  <a href="https://www.instagram.com/good_life_mission/"><i class="fa-brands fa-instagram"></i></a>
+<!-- Top Bar -->
+<div class="top-bar">
+  <span><i class="fa-solid fa-phone"></i>73585 20425</span>
+  <span><i class="fa-solid fa-envelope"></i> goodlifemission.international@gmail.com</span>
+  <span><i class="fa-solid fa-location-dot"></i> Coimbatore, India</span>
 </div>
 
-    </nav>
+<!-- Navbar -->
+<nav class="navbar">
+  <!-- Logo + Title -->
+  <div class="logo">
+    <img src="img/Good Life Mission logo.ico" alt="Logo">
+    <span>Good Life Mission</span>
+  </div>
+
+  <!-- Hamburger (Mobile) -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Menu Links -->
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li class="dropdown">
+      <a href="#">Program ▾</a>
+      <ul class="submenu">
+        <li><a href="ministry.html">Church</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="counselling.html">Counselling</a></li>
+      </ul>
+    </li>
+    <li><a href="#donation">Contribute</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <!-- Social Media -->
+  <div class="social-icons">
+    <a href="https://www.facebook.com/ApostalicFaithFellowshipministries/"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://www.youtube.com/@GoodLifeMissionInternational"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://www.instagram.com/good_life_mission/"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</nav>
+<script src="mobile.js"></script>
   </header>
+
+ 
 
 <!-- ===== Church Ministry Section ===== -->
 <section class="church-section">
