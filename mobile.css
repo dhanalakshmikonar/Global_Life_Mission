@@ -130,3 +130,19 @@
   }
 }
 
+/* Default: both visible as per desktop css */
+
+/* On mobile hide top-bar, show ticker */
+@media (max-width: 768px) {
+  .top-bar {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .event-ticker {
+    visibility: visible;
+    height: auto;
+  }
+}
+
