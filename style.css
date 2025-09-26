@@ -637,6 +637,13 @@ body {
   color: #666;
 }
 
+.site-footer {
+  background: #f3eded;
+  color: #333;
+  padding: 120px 60px 60px;  /* more breathing space */
+}
+
+
 /* --- Event Ticker Styles --- */
 .event-ticker {
   position: sticky;
