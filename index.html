@@ -339,46 +339,71 @@ We preach to awaken hearts and bring every person into the full understanding of
 
   <!-- Heading -->
    <!-- ===== Contribute Heading ===== -->
-<div class="donation-heading">
-  <h1><br></h1>
-  <h1>Contribute</h1>
-  <p class="donation-subheading">“Your generosity plants seeds of hope.”</p>
-</div>
 
-  <!-- ===== Contribute / Donation Section ===== -->
-<section class="donation-section">
-  <div class="donation-container">
+
+<!-- ===== Contribution Section ===== -->
+<section id="donation" class="contribution-section">
+  <div class="contribution-heading">
+    <h1>Contribute</h1>
+    <p class="contribution-quote">“Your generosity plants seeds of hope.”</p>
+  </div>
+
+  <div class="contribution-container">
     
-    <!-- Left: Content -->
-    <div class="donation-text">
-      <h2>Make a Difference Today ❤️</h2>
-      <p>
-        Your contribution helps us serve communities, bring hope, and spread love. 
-        Every donation counts, and together we can impact lives for the better.
-      </p>
+    <!-- Left: Volunteer Form -->
+    <div class="contribution-box volunteer-box">
+      <h2>To Give Yourself</h2>
+      <p>To nominate yourself as a Volunteer</p>
+      <form class="volunteer-form">
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
 
-      <!-- Donation Options -->
-      <div class="donation-options">
-        <button class="donation-amount">100</button>
-        <button class="donation-amount">₹500</button>
-        <button class="donation-amount">₹1000</button>
-        <input type="number" placeholder="Custom Amount (₹)" class="donation-input" />
-      </div>
+        <label>Age</label>
+        <input type="number" placeholder="Enter your age" required>
 
-      <!-- Donate Button -->
-      <a href="img/scanner.jpg" target="_blank" class="donate-btn">Contribute Now</a>
+        <label>Mobile No</label>
+        <input type="tel" placeholder="Enter your mobile number" required>
+
+        <label>Address</label>
+        <textarea placeholder="Enter your address" required></textarea>
+
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
     </div>
 
-   <!-- Right: Illustration -->
-<div class="donation-image zoom-in-on-scroll">
-  <img src="img/contro.png" alt="Donate" />
+<!-- Right: Donation Options -->
+<div class="contribution-box donation-box">
+  <h2>To Give Your Money</h2>
+  <p>Choose your preferred way to contribute</p>
+
+  <div class="donation-option">
+    <button class="donation-btn" onclick="openModal('account')">Trust Account Details</button>
+  </div>
+  <div class="donation-option">
+    <button class="donation-btn" onclick="openModal('scanner')">Bank QR Code</button>
+  </div>
+
+  <!-- Verse Image -->
+  <div class="donation-verse">
+    <img src="img/contro.png" alt="Bible Verse">
+  </div>
+</div>
+
+<!-- ===== Modal Popup ===== -->
+<div id="popupModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <div id="modal-body"></div>
+  </div>
 </div>
 
 
-  <!-- 🔗 CSS and JS Links -->
-<link rel="stylesheet" href="donation.css" />
-<script src="donation.js" defer></script>
+ 
+<link rel="stylesheet" href="donation.css">
+<script src="donation.js"></script>
+  </div>
 </section>
+
 
 
 <section class="testimonial-section">
