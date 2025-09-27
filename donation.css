@@ -206,3 +206,8 @@
 .donation-verse img:hover {
   transform: scale(1.05);
 }
+
+/* Hide the donation modal */
+.modal, .donation-box {
+    display: none !important;
+}
