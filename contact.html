@@ -151,7 +151,7 @@ Coimbatore- 641653</p>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
       event.preventDefault(); // Prevent normal form submit
 
-      emailjs.sendForm('service_i023m49', 'template_f9u1p8h', this)
+      emailjs.sendForm('service_i023m49', 'template_f9u1p8h')
         .then(function() {
           alert('✅ Your message has been sent successfully!');
           document.getElementById('contactForm').reset();
