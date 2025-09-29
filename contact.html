@@ -127,13 +127,13 @@ Coimbatore- 641653</p>
     <div class="contact-main">
       <div class="contact-form">
         <h2>Take the First Step to Change!</h2>
-        <form>
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
-          <input type="tel" placeholder="Phone Number" required>
-          <textarea placeholder="Message" required></textarea>
-          <button type="submit">Send</button>
-        </form>
+        <form id="contactForm">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <textarea name="message" placeholder="Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
       </div>
       <div class="contact-map">
         <iframe 
@@ -143,6 +143,26 @@ Coimbatore- 641653</p>
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    emailjs.init("MdJX-JHaC01rrVrdH"); // Replace with your Public Key
+
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent normal form submit
+
+      emailjs.sendForm('service_i023m49', 'template_f9u1p8h', this)
+        .then(function() {
+          alert('✅ Your message has been sent successfully!');
+          document.getElementById('contactForm').reset();
+        }, function(error) {
+          alert('❌ Failed to send message. Please try again later.');
+          console.log('FAILED...', error);
+        });
+    });
+  });
+</script>
+
 </section>
 
 <link rel="stylesheet" href="contact.css">
