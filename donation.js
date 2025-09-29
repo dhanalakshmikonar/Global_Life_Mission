@@ -45,7 +45,7 @@ window.onclick = function(e) {
   document.getElementById('volunteerForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    emailjs.sendForm('service_i023m49', 'MdJX-JHaC01rrVrdH', this)
+    emailjs.sendForm('service_i023m49', 'template_9nyzf5k', this)
       .then(function() {
         alert('✅ Thank you! Your information has been sent.');
       }, function(error) {
