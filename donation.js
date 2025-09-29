@@ -7,10 +7,10 @@ function openModal(type) {
   if (type === 'account') {
     modalBody.innerHTML = `
       <h2 style="color: black;">Trust Account Details</h2>
-      <p style="color: black;"><strong>Bank:</strong> SBI Bank</p>
-      <p style="color: black;"><strong>Account No:</strong> 1234567890</p>
-      <p style="color: black;"><strong>IFSC:</strong> SBIN0001234</p>
-      <p style="color: black;"><strong>Branch:</strong> Coimbatore</p>
+      <p style="color: black;"><strong>Bank:</strong> HDFC Bank</p>
+      <p style="color: black;"><strong>Account No:</strong> 50200068097832</p>
+      <p style="color: black;"><strong>IFSC:</strong> HDFC0005313</p>
+      <p style="color: black;"><strong>Branch:</strong> East Tambaram</p>
     `;
   } else if (type === 'scanner') {
     modalBody.innerHTML = `
