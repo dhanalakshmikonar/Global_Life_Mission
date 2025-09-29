@@ -143,25 +143,27 @@ Coimbatore- 641653</p>
       </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    emailjs.init("MdJX-JHaC01rrVrdH"); // Replace with your Public Key
+document.addEventListener('DOMContentLoaded', function() {
+  emailjs.init("MdJX-JHaC01rrVrdH"); // Your Public Key
 
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent normal form submit
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent normal form submit
 
-      emailjs.sendForm('service_i023m49', 'template_f9u1p8h')
-        .then(function() {
-          alert('✅ Your message has been sent successfully!');
-          document.getElementById('contactForm').reset();
-        }, function(error) {
-          alert('❌ Failed to send message. Please try again later.');
-          console.log('FAILED...', error);
-        });
-    });
+    // Pass 'this' as the form element
+    emailjs.sendForm('service_i023m49', 'template_f9u1p8h', this)
+      .then(function() {
+        alert('✅ Your message has been sent successfully!');
+        document.getElementById('contactForm').reset();
+      }, function(error) {
+        alert('❌ Failed to send message. Please try again later.');
+        console.log('FAILED...', error);
+      });
   });
+});
 </script>
+
 
 </section>
 
