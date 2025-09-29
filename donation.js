@@ -39,18 +39,19 @@ window.onclick = function(e) {
 
 
   (function(){
-    emailjs.init("MdJX-JHaC01rrVrdH"); // Replace with your Public Key
-  })();
+  emailjs.init("MdJX-JHaC01rrVrdH"); // Your Public Key
+})();
 
-  document.getElementById('volunteerForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('volunteerForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent default form submit
 
-    emailjs.sendForm('service_i023m49', 'template_9nyzf5k', this)
-      .then(function() {
-        alert('✅ Thank you! Your information has been sent.');
-      }, function(error) {
-        alert('❌ Failed to send. Please try again later.');
-        console.log('FAILED...', error);
-      });
-  });
+  emailjs.sendForm('service_i023m49', 'template_9nyzf5k', this)
+    .then(function() {
+      alert('✅ Thank you! Your information has been sent.');
+      document.getElementById('volunteerForm').reset(); // Reset form after submission
+    }, function(error) {
+      alert('❌ Failed to send. Please try again later.');
+      console.log('FAILED...', error);
+    });
+});
 
