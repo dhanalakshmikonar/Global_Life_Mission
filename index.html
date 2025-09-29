@@ -380,7 +380,7 @@ We preach to awaken hearts and bring every person into the full understanding of
     <button class="donation-btn" onclick="openModal('account')">Trust Account Details</button>
   </div>
   <div class="donation-option">
-    <button class="donation-btn" onclick="openModal('scanner')">Bank QR Code</button>
+    <button class="donation-btn" onclick="openModal('scanner')">Scan QR Code</button>
   </div>
 
   <!-- Verse Image -->
@@ -397,6 +397,22 @@ We preach to awaken hearts and bring every person into the full understanding of
   </div>
 </div>
 
+<form class="volunteer-form" action="send_mail.php" method="POST">
+  <label>Name</label>
+  <input type="text" name="name" placeholder="Enter your name" required>
+
+  <label>Age</label>
+  <input type="number" name="age" placeholder="Enter your age" required>
+
+  <label>Mobile No</label>
+  <input type="tel" name="mobile" placeholder="Enter your mobile number" required>
+
+  <label>Address</label>
+  <textarea name="address" placeholder="Enter your address" required></textarea>
+
+  <button type="submit" class="btn-submit">Submit</button>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
  
 <link rel="stylesheet" href="donation.css">

@@ -35,3 +35,22 @@ window.onclick = function(e) {
     closeModal();
   }
 }
+
+
+
+  (function(){
+    emailjs.init("MdJX-JHaC01rrVrdH"); // Replace with your Public Key
+  })();
+
+  document.getElementById('volunteerForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_i023m49', 'MdJX-JHaC01rrVrdH', this)
+      .then(function() {
+        alert('✅ Thank you! Your information has been sent.');
+      }, function(error) {
+        alert('❌ Failed to send. Please try again later.');
+        console.log('FAILED...', error);
+      });
+  });
+
